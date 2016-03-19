@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Application</title>
+        <meta name="description" content="My Application">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'sets/javascripts/application', 'data-turbolinks-track' => true %>
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <ul class="nav navbar-collapse">
+                <li><%= link_to 'Home', '/' %></li>
+                <li><%= link_to 'Djs', djs_path %></li>
+            </ul>
+        </header>
+        <%= yield %>
+    </body>
+</html>
