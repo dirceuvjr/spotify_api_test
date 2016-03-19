@@ -14,8 +14,10 @@
             <ul class="nav navbar-collapse">
                 <li><%= link_to 'Home', '/' %></li>
                 <li><%= link_to 'Djs', djs_path %></li>
+                <li><%= link_to 'Spotify artists', spotify_artists_path %></li>
             </ul>
         </header>
+        <p style="color: green"><%= notice %></p>
         <%= yield %>
     </body>
 </html>

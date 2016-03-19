@@ -9,10 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160319004653) do
+ActiveRecord::Schema.define(:version => 20160319022255) do
 
   create_table "djs", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spotify_artists", :force => true do |t|
+    t.string   "spotify_id"
+    t.string   "name"
+    t.integer  "popularity"
+    t.integer  "dj_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

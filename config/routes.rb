@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 
+  map.resources :spotify_artists
   map.resources :djs
   map.root :controller => "djs", :action => 'index'
 

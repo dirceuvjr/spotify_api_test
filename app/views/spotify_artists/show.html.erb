@@ -1,0 +1,18 @@
+<p>
+  <b>Spotify:</b>
+  <%=h @spotify_artist.spotify_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @spotify_artist.name %>
+</p>
+
+<p>
+  <b>Popularity:</b>
+  <%=h @spotify_artist.popularity %>
+</p>
+
+
+<%= link_to 'Edit', edit_spotify_artist_path(@spotify_artist) %> |
+<%= link_to 'Back', spotify_artists_path %>
