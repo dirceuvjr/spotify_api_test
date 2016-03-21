@@ -13,6 +13,11 @@
   <%=h @spotify_artist.popularity %>
 </p>
 
+<p>
+  <b>Dj:</b>
+  <%=h @spotify_artist.dj %>
+</p>
+
 
 <%= link_to 'Edit', edit_spotify_artist_path(@spotify_artist) %> |
 <%= link_to 'Back', spotify_artists_path %>
